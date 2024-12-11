@@ -83,3 +83,24 @@ excited.addEventListener("click", () => {
     excited.style.backgroundColor = "yellow";
     excited.innerHTML = ("Yes i did it!! I manipulated the DOM and styled my elements🥰🥰🥰🥰");
 });
+
+// let AX10 = document.querySelector(".AX10");
+// let open = document.querySelector(".open");
+// let close = document.querySelector(".close");
+
+function showItem() {
+let AX10 = document.querySelector(".AX10");
+AX10.style.display = "block";
+let close = document.querySelector(".close");
+close.style.display = "block";
+}
+let open = document.querySelector(".open");
+open.addEventListener("click", showItem);
+function hideItem(){
+let  AX10 = document.querySelector(".AX10");
+AX10.style.display = "none";
+close.style.display = "none";
+};
+
+let close = document.querySelector(".close");
+close.addEventListener("click", hideItem);
